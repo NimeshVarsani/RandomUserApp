@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AddUserActivity"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp">
+
+            <FrameLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp">
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/profilePic"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:srcCompat="@drawable/ic_baseline_account_circle_24"
+                    android:layout_gravity="bottom|center_horizontal" />
+
+                <com.mikhaellopez.circularimageview.CircularImageView
+                    android:id="@+id/iv_camera"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="bottom|end"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_photo_add" />
+            </FrameLayout>
+
+            <EditText
+                android:id="@+id/afname"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="40dp"
+                android:hint="First Name"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/alname"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:hint="Last Name"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/acity"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:hint="City"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/acountry"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:hint="Country"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/aphone"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="50dp"
+                android:hint="Phone Number"
+                android:inputType="number"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/addUser"
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="64dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/curve"
+                android:text="Add"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
+
